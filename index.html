@@ -14,13 +14,11 @@
     <nav class="navbar" id="navbar">
         <div class="logo-container">
             <span class="logo-text">I.R.I.S.</span>
-            <span class="logo-badge">PROTOTIPO V1</span>
+            <span class="logo-badge">PROTOTIPO V3</span>
         </div>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#simulador">Simulador IA</a></li>
             <li><a href="#solucion">Sistema</a></li>
-            <li><a href="#galeria">Casos de Uso</a></li>
             <li><a href="#impacto">Impacto</a></li>
         </ul>
         <a href="#video" class="btn-nav">Ver Demo</a>
@@ -78,51 +76,7 @@
         </div>
     </section>
 
-    <!-- NUEVO: Simulador Interactivo IA (Elemento diferenciador para la competencia) -->
-    <section id="simulador" class="container">
-        <div class="section-title">
-            <span class="sub-badge">Demo Interactiva</span>
-            <h2>Simulador del Entorno IRIS</h2>
-            <p>Experimenta cómo procesa nuestro algoritmo las señales visuales en tiempo real.</p>
-        </div>
-
-        <div class="simulator-box">
-            <div class="sim-controls">
-                <button class="sim-btn active" onclick="runSimulation('ocr')"><i data-lucide="scan-text"></i> Modo Lectura (OCR)</button>
-                <button class="sim-btn" onclick="runSimulation('obstacle')"><i data-lucide="alert-octagon"></i> Alerta de Obstáculo</button>
-                <button class="sim-btn" onclick="runSimulation('nav')"><i data-lucide="compass"></i> Navegación GPS</button>
-            </div>
-            <div class="sim-display">
-                <div class="sim-screen">
-                    <div class="sim-header">
-                        <span><i data-lucide="eye"></i> Cámara Gran Angular [EN VIVO]</span>
-                        <span class="status-indicator">● PROCESANDO</span>
-                    </div>
-                    <div class="sim-content" id="sim-text">
-                        Presiona uno de los modos arriba para iniciar la simulación de inteligencia artificial...
-                    </div>
-                </div>
-                <div class="sim-feedback">
-                    <h4>Respuesta del Sistema:</h4>
-                    <div class="feedback-item">
-                        <i data-lucide="volume-2" class="icon-pulse"></i>
-                        <div>
-                            <strong>Audio Óseo:</strong>
-                            <p id="audio-text">En espera de instrucción...</p>
-                        </div>
-                    </div>
-                    <div class="feedback-item">
-                        <i data-lucide="vibrate" class="icon-pulse"></i>
-                        <div>
-                            <strong>Respuesta Háptica:</strong>
-                            <p id="haptic-text">Vibración inactiva</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+ 
     <!-- Sección del Video de Presentación -->
     <section id="video" class="container">
         <div class="section-title">
@@ -131,8 +85,8 @@
             <p>Mira el prototipo en acción enfrentando desafíos reales de movilidad.</p>
         </div>
         <div class="video-wrapper">
-            <video controls poster="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
-                <source src="tu-video.mp4" type="video/mp4">
+            <video controls poster="resources/main.jpeg">
+                <source src="demo.mp4" type="video/mp4">
                 Tu navegador no soporta el formato de video.
             </video>
         </div>
@@ -228,44 +182,7 @@
         </div>
     </section>
 
-    <!-- NUEVO: Galería de Casos de Uso con Imágenes -->
-    <section id="galeria" class="container">
-        <div class="section-title">
-            <span class="sub-badge">Versatilidad</span>
-            <h2>Escenarios de Aplicación Real</h2>
-            <p>Un diseño preparado para integrarse de manera natural en el día a día.</p>
-        </div>
-        
-        <div class="gallery-grid">
-            <div class="gallery-card">
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="Navegación Urbana">
-                </div>
-                <div class="gallery-info">
-                    <h4>Navegación Urbana</h4>
-                    <p>Alerta de baches, postes y peatones en entornos con alta concurrencia.</p>
-                </div>
-            </div>
-            <div class="gallery-card">
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80" alt="Lectura en Estudio">
-                </div>
-                <div class="gallery-info">
-                    <h4>Lectura Académica y Laboral</h4>
-                    <p>Traducción instantánea de páginas impresas a voz para estudio o trabajo independiente.</p>
-                </div>
-            </div>
-            <div class="gallery-card">
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600&q=80" alt="Interacción Social">
-                </div>
-                <div class="gallery-info">
-                    <h4>Interacción Social</h4>
-                    <p>Diseño moderno que elimina el estigma visual de los dispositivos médicos tradicionales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Diagrama de Flujo del Usuario -->
     <section class="container">
